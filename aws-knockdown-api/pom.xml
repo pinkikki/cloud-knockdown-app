@@ -5,7 +5,7 @@
 
 	<parent>
 		<groupId>jp.pinkikki</groupId>
-		<artifactId>clous-knockdown-app</artifactId>
+		<artifactId>cloud-knockdown-app</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
