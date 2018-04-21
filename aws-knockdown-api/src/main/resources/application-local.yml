@@ -1,0 +1,20 @@
+#  profilesの方に記載しても、除外されない。全てのプロファイル共通（一番上とか）
+spring:
+  profiles:
+    active: local
+server:
+  port: 8080
+spring:
+  datasource:
+    username: pinkikki
+    password: password
+    url: jdbc:postgresql://192.168.33.10:5432/pinkikki
+#  profilesの方に記載しても、除外されない。application.ymlに記載すれば問題なさそう…。
+#spring:
+#  autoconfigure:
+#    exclude: org.springframework.cloud.aws.autoconfigure.context.ContextResourceLoaderAutoConfiguration,
+#      org.springframework.cloud.aws.autoconfigure.mail.MailSenderAutoConfiguration,
+#      org.springframework.cloud.aws.autoconfigure.cache.ElastiCacheAutoConfiguration,
+#      org.springframework.cloud.aws.autoconfigure.messaging.MessagingAutoConfiguration,
+#      org.springframework.cloud.aws.autoconfigure.jdbc.AmazonRdsDatabaseAutoConfiguration,
+#      org.springframework.cloud.aws.autoconfigure.metrics.CloudWatchExportAutoConfiguration

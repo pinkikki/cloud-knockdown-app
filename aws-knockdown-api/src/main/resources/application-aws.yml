@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: aws
+instanceProfile: true
+cloud:
+  aws:
+# accessKey/secretKeyが必要な場合
+# ec2に、rdsの操作が可能なロールを持つIAMを設定する事で、accessKey/secretKeyは不要になる
+# また、accessKey/secretKeyが必要だとしても、環境変数に設定や、S3等に暗号化した状態で格納するのが望ましい。
+#    credentials:
+#      accessKey:
+#      secretKey:
+# ↓の情報も、環境変数に設定するのでよいかと思う。
+    resion:
+      static: ap-northeast-1
+      auto: true
+    rds:
+      dbInstanceIdentifier:
+      springaws:
+        username:
+        password:
+        databaseName:
+# cloud formationの自動設定を止める
+    stack:
+      auto: false
