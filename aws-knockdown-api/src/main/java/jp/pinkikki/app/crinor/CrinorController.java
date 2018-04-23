@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 @RequestMapping("crinor")
 public class CrinorController {
 
-    EventService eventService;
+    private final EventService eventService;
 
     public CrinorController(EventService eventService) {
         this.eventService = eventService;

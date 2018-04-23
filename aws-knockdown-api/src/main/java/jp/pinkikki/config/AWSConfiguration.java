@@ -12,5 +12,5 @@ import org.springframework.context.annotation.Profile;
         databaseName="${databaseName}",
 		username="${username}",
 		password="${password}")
-public class AwsConfiguration {
+public class AWSConfiguration {
 }

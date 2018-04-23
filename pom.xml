@@ -23,6 +23,7 @@
 	</properties>
 
 	<modules>
+		<module>aws-knockdown-web</module>
 		<module>aws-knockdown-api</module>
 	</modules>
 

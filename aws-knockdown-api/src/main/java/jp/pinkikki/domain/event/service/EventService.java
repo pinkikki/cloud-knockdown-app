@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 @Service
 public class EventService {
 
-    EventDao eventDao;
+    private final EventDao eventDao;
 
     public EventService(EventDao eventDao) {
         this.eventDao = eventDao;
