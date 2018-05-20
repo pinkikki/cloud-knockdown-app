@@ -37,3 +37,19 @@ spring:
 ## accessKey/secretKey
 
 EC2/RDSを、IAMに紐づけておけば、accessKey/secretKeyの指定は不要
+
+## spring security
+
+デフォルトでは以下のヘッダが設定される
+
+https://docs.spring.io/spring-security/site/docs/current/reference/html/headers.html#default-security-headers
+
+静的ファイルのキャッシュをする場合は、以下を参考にする
+※デフォルトで、staticディレクトリはキャッシュ設定になってる？？
+
+https://docs.spring.io/spring-security/site/docs/current/reference/html/headers.html#headers-cache-control
+
+
+また、spring securityとは関係ないが、静的ファイルにバージョンを加えるのは、以下は参考となる
+
+https://qiita.com/nenokido2000/items/edd469110d5bd84d305f
